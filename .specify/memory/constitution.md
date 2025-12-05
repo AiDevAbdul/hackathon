@@ -1,55 +1,95 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: None → 1.0.0
+Modified principles:
+  - [PROJECT_NAME] → Physical AI & Humanoid Robotics Textbook Project
+  - [PRINCIPLE_1_NAME] → I. Spec-Driven Book Creation
+  - [PRINCIPLE_1_DESCRIPTION] → The textbook content and structure are defined through a spec-driven approach using Spec-Kit Plus. All book elements (chapters, modules, exercises) must be clearly outlined in specifications before implementation.
+  - [PRINCIPLE_2_NAME] → II. AI-Native & Agent-Assisted Development
+  - [PRINCIPLE_2_DESCRIPTION] → Leverage Claude Code and AI agents for content generation, RAG chatbot development, and other development tasks. Prioritize reusable intelligence through Claude Code Subagents and Agent Skills to enhance efficiency and capabilities.
+  - [PRINCIPLE_3_NAME] → III. Interactive Learning Experience
+  - [PRINCIPLE_3_DESCRIPTION] → The textbook must include an integrated RAG chatbot for interactive Q&A. Personalization and translation features should be implemented to cater to diverse learning needs and improve user engagement.
+  - [PRINCIPLE_4_NAME] → IV. Robust Technical Content
+  - [PRINCIPLE_4_DESCRIPTION] → Content for the Physical AI & Humanoid Robotics course must be technically accurate, detailed, and cover ROS 2, Gazebo, Unity, NVIDIA Isaac, and Vision-Language-Action (VLA) models as outlined in the course details.
+  - [PRINCIPLE_5_NAME] → V. Deployment and Accessibility
+  - [PRINCIPLE_5_DESCRIPTION] → The textbook will be deployed using Docusaurus to GitHub Pages, ensuring public accessibility. The RAG chatbot and other interactive features must be fully functional within the published book.
+  - [PRINCIPLE_6_NAME] → VI. Hardware and Simulation Awareness
+  - [PRINCIPLE_6_DESCRIPTION] → Acknowledge and address the significant hardware requirements for Physical AI, including high-performance workstations for simulation and edge computing kits for physical deployment. Course content should guide students through both on-premise and cloud-native lab setups.
+  - [SECTION_2_NAME] → Development Workflow
+  - [SECTION_2_CONTENT] → - **Spec Creation:** Book structure and content modules are defined in `spec.md` using Spec-Kit Plus.
+  - **Content Generation:** AI agents assist in drafting, refining, and verifying textbook content.
+  - **Feature Implementation:** RAG chatbot, personalization, and translation features are integrated into the Docusaurus project.
+  - **Deployment:** The book is deployed to GitHub Pages.
+  - **Continuous Improvement:** Feedback from the RAG chatbot and user interactions will inform content updates and feature enhancements.
+  - [SECTION_3_NAME] → Quality Gates
+  - [SECTION_3_CONTENT] → - **Technical Accuracy:** All technical content in the book is rigorously reviewed for accuracy.
+  - **Functionality Testing:** The RAG chatbot and interactive features are thoroughly tested for correctness and responsiveness.
+  - **Accessibility Review:** Ensure the published book is accessible and functions correctly across various devices and browsers.
+  - **Performance Optimization:** The Docusaurus site and embedded features are optimized for loading speed and responsiveness.
+  - **User Feedback Integration:** Mechanisms for collecting and incorporating user feedback are established.
+  - [GOVERNANCE_RULES] → - This Constitution outlines the foundational principles for the Physical AI & Humanoid Robotics Textbook Project.
+  - All project deliverables and contributions must align with these principles and the hackathon requirements.
+  - Amendments to these principles require explicit agreement from the project leads.
+  - Regular reviews will be conducted to ensure ongoing compliance with technical accuracy and user experience standards.
+  - Refer to the `Hackathon.md` for specific project requirements, timelines, and bonus point opportunities.
+  - [CONSTITUTION_VERSION] → 1.0.0
+  - [RATIFICATION_DATE] → 2025-12-05
+  - [LAST_AMENDED_DATE] → 2025-12-05
+Added sections: None
+Removed sections: None
+Templates requiring updates:
+  - .specify/templates/plan-template.md: ✅ updated
+  - .specify/templates/spec-template.md: ✅ updated
+  - .specify/templates/tasks-template.md: ✅ updated
+  - .specify/templates/commands/sp.constitution.md: ✅ updated
+  - README.md: ⚠ pending
+  - docs/quickstart.md: ⚠ pending
+Follow-up TODOs: None
+-->
+# Physical AI & Humanoid Robotics Textbook Project Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Spec-Driven Book Creation
+The textbook content and structure are defined through a spec-driven approach using Spec-Kit Plus. All book elements (chapters, modules, exercises) must be clearly outlined in specifications before implementation.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. AI-Native & Agent-Assisted Development
+Leverage Claude Code and AI agents for content generation, RAG chatbot development, and other development tasks. Prioritize reusable intelligence through Claude Code Subagents and Agent Skills to enhance efficiency and capabilities.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Interactive Learning Experience
+The textbook must include an integrated RAG chatbot for interactive Q&A. Personalization and translation features should be implemented to cater to diverse learning needs and improve user engagement.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Robust Technical Content
+Content for the Physical AI & Humanoid Robotics course must be technically accurate, detailed, and cover ROS 2, Gazebo, Unity, NVIDIA Isaac, and Vision-Language-Action (VLA) models as outlined in the course details.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Deployment and Accessibility
+The textbook will be deployed using Docusaurus to GitHub Pages, ensuring public accessibility. The RAG chatbot and other interactive features must be fully functional within the published book.
 
-### [PRINCIPLE_6_NAME]
+### VI. Hardware and Simulation Awareness
+Acknowledge and address the significant hardware requirements for Physical AI, including high-performance workstations for simulation and edge computing kits for physical deployment. Course content should guide students through both on-premise and cloud-native lab setups.
 
+## Development Workflow
 
-[PRINCIPLE__DESCRIPTION]
+- **Spec Creation:** Book structure and content modules are defined in `spec.md` using Spec-Kit Plus.
+- **Content Generation:** AI agents assist in drafting, refining, and verifying textbook content.
+- **Feature Implementation:** RAG chatbot, personalization, and translation features are integrated into the Docusaurus project.
+- **Deployment:** The book is deployed to GitHub Pages.
+- **Continuous Improvement:** Feedback from the RAG chatbot and user interactions will inform content updates and feature enhancements.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Quality Gates
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- **Technical Accuracy:** All technical content in the book is rigorously reviewed for accuracy.
+- **Functionality Testing:** The RAG chatbot and interactive features are thoroughly tested for correctness and responsiveness.
+- **Accessibility Review:** Ensure the published book is accessible and functions correctly across various devices and browsers.
+- **Performance Optimization:** The Docusaurus site and embedded features are optimized for loading speed and responsiveness.
+- **User Feedback Integration:** Mechanisms for collecting and incorporating user feedback are established.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+- This Constitution outlines the foundational principles for the Physical AI & Humanoid Robotics Textbook Project.
+- All project deliverables and contributions must align with these principles and the hackathon requirements.
+- Amendments to these principles require explicit agreement from the project leads.
+- Regular reviews will be conducted to ensure ongoing compliance with technical accuracy and user experience standards.
+- Refer to the `Hackathon.md` for specific project requirements, timelines, and bonus point opportunities.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-05 | **Last Amended**: 2025-12-05
