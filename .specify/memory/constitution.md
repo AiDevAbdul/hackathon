@@ -1,40 +1,17 @@
 <!--
 Sync Impact Report:
-Version change: None → 1.0.0
+Version change: 1.0.0 → 1.1.0
 Modified principles:
-  - [PROJECT_NAME] → Physical AI & Humanoid Robotics Textbook Project
-  - [PRINCIPLE_1_NAME] → I. Spec-Driven Book Creation
-  - [PRINCIPLE_1_DESCRIPTION] → The textbook content and structure are defined through a spec-driven approach using Spec-Kit Plus. All book elements (chapters, modules, exercises) must be clearly outlined in specifications before implementation.
-  - [PRINCIPLE_2_NAME] → II. AI-Native & Agent-Assisted Development
-  - [PRINCIPLE_2_DESCRIPTION] → Leverage Claude Code and AI agents for content generation, RAG chatbot development, and other development tasks. Prioritize reusable intelligence through Claude Code Subagents and Agent Skills to enhance efficiency and capabilities.
-  - [PRINCIPLE_3_NAME] → III. Interactive Learning Experience
-  - [PRINCIPLE_3_DESCRIPTION] → The textbook must include an integrated RAG chatbot for interactive Q&A. Personalization and translation features should be implemented to cater to diverse learning needs and improve user engagement.
-  - [PRINCIPLE_4_NAME] → IV. Robust Technical Content
-  - [PRINCIPLE_4_DESCRIPTION] → Content for the Physical AI & Humanoid Robotics course must be technically accurate, detailed, and cover ROS 2, Gazebo, Unity, NVIDIA Isaac, and Vision-Language-Action (VLA) models as outlined in the course details.
-  - [PRINCIPLE_5_NAME] → V. Deployment and Accessibility
-  - [PRINCIPLE_5_DESCRIPTION] → The textbook will be deployed using Docusaurus to GitHub Pages, ensuring public accessibility. The RAG chatbot and other interactive features must be fully functional within the published book.
-  - [PRINCIPLE_6_NAME] → VI. Hardware and Simulation Awareness
-  - [PRINCIPLE_6_DESCRIPTION] → Acknowledge and address the significant hardware requirements for Physical AI, including high-performance workstations for simulation and edge computing kits for physical deployment. Course content should guide students through both on-premise and cloud-native lab setups.
-  - [SECTION_2_NAME] → Development Workflow
-  - [SECTION_2_CONTENT] → - **Spec Creation:** Book structure and content modules are defined in `spec.md` using Spec-Kit Plus.
-  - **Content Generation:** AI agents assist in drafting, refining, and verifying textbook content.
-  - **Feature Implementation:** RAG chatbot, personalization, and translation features are integrated into the Docusaurus project.
-  - **Deployment:** The book is deployed to GitHub Pages.
-  - **Continuous Improvement:** Feedback from the RAG chatbot and user interactions will inform content updates and feature enhancements.
-  - [SECTION_3_NAME] → Quality Gates
-  - [SECTION_3_CONTENT] → - **Technical Accuracy:** All technical content in the book is rigorously reviewed for accuracy.
-  - **Functionality Testing:** The RAG chatbot and interactive features are thoroughly tested for correctness and responsiveness.
-  - **Accessibility Review:** Ensure the published book is accessible and functions correctly across various devices and browsers.
-  - **Performance Optimization:** The Docusaurus site and embedded features are optimized for loading speed and responsiveness.
-  - **User Feedback Integration:** Mechanisms for collecting and incorporating user feedback are established.
-  - [GOVERNANCE_RULES] → - This Constitution outlines the foundational principles for the Physical AI & Humanoid Robotics Textbook Project.
-  - All project deliverables and contributions must align with these principles and the hackathon requirements.
-  - Amendments to these principles require explicit agreement from the project leads.
-  - Regular reviews will be conducted to ensure ongoing compliance with technical accuracy and user experience standards.
-  - Refer to the `Hackathon.md` for specific project requirements, timelines, and bonus point opportunities.
-  - [CONSTITUTION_VERSION] → 1.0.0
-  - [RATIFICATION_DATE] → 2025-12-05
-  - [LAST_AMENDED_DATE] → 2025-12-05
+  - PROJECT_NAME: Physical AI & Humanoid Robotics Textbook Project
+  - PRINCIPLE_1_NAME: I. Spec-Driven Book Creation
+  - PRINCIPLE_2_NAME: II. AI-Native & Agent-Assisted Development
+  - PRINCIPLE_3_NAME: III. Interactive Learning Experience
+  - PRINCIPLE_4_NAME: IV. Robust Technical Content
+  - PRINCIPLE_5_NAME: V. Deployment and Accessibility
+  - PRINCIPLE_6_NAME: VI. Hardware and Simulation Awareness
+  - SECTION_2_NAME: Development Workflow
+  - SECTION_3_NAME: Quality Gates
+  - GOVERNANCE_RULES: Project Governance
 Added sections: None
 Removed sections: None
 Templates requiring updates:
@@ -46,6 +23,7 @@ Templates requiring updates:
   - docs/quickstart.md: ⚠ pending
 Follow-up TODOs: None
 -->
+
 # Physical AI & Humanoid Robotics Textbook Project Constitution
 
 ## Core Principles
@@ -90,6 +68,6 @@ Acknowledge and address the significant hardware requirements for Physical AI, i
 - All project deliverables and contributions must align with these principles and the hackathon requirements.
 - Amendments to these principles require explicit agreement from the project leads.
 - Regular reviews will be conducted to ensure ongoing compliance with technical accuracy and user experience standards.
-- Refer to the `Hackathon.md` for specific project requirements, timelines, and bonus point opportunities.
+- Refer to the project documentation for specific requirements, timelines, and bonus point opportunities.
 
-**Version**: 1.0.0 | **Ratified**: 2025-12-05 | **Last Amended**: 2025-12-05
+**Version**: 1.1.0 | **Ratified**: 2025-12-05 | **Last Amended**: 2025-12-05
