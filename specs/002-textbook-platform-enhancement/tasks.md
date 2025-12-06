@@ -1,8 +1,8 @@
-# Implementation Tasks: Physical AI & Humanoid Robotics Textbook Platform Enhancement
+# Implementation Tasks: Physical AI & Humanoid Robotics Textbook Platform Enhancement (Next.js Conversion)
 
 **Feature**: 002-textbook-platform-enhancement
 **Created**: 2025-12-05
-**Status**: Draft
+**Status**: In Progress
 
 ## Implementation Strategy
 
@@ -177,3 +177,20 @@ The implementation will follow an incremental delivery approach with User Story 
 - [X] T098 [P] Add comprehensive user guides and help documentation
 - [X] T099 Conduct final integration testing
 - [X] T100 Prepare for production deployment
+
+## Phase 10: Next.js Frontend Conversion
+
+**Goal**: Convert the Docusaurus-based frontend to Next.js with App Router for enhanced interactivity and performance
+
+- [X] T101 Set up Next.js project with TypeScript, Tailwind CSS, and App Router
+- [X] T102 Migrate frontend components from Docusaurus to Next.js App Router structure
+- [X] T103 Create Next.js pages for textbook content using dynamic routing
+- [X] T104 Implement Next.js API routes for authentication (login, register)
+- [X] T105 Create Next.js API route for RAG chatbot functionality
+- [X] T106 Migrate custom CSS styles to Next.js globals.css with accessibility improvements
+- [X] T107 Create textbook content display pages with markdown rendering capability
+- [X] T108 Implement chat interface page with real-time messaging
+- [X] T109 Create user authentication flows (login, register, profile)
+- [X] T110 Integrate with backend services for all functionality
+- [X] T111 Update project documentation to reflect Next.js architecture
+- [X] T112 Test all functionality in Next.js environment

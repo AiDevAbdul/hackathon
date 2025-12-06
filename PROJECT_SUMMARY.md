@@ -63,11 +63,13 @@ The Physical AI & Humanoid Robotics Textbook Platform has been successfully impl
 - **Rate Limiting**: Protection against abuse with slowapi
 
 ### Frontend Architecture
-- **Framework**: Docusaurus for documentation-based platform
-- **Components**: React-based modular components
-- **Styling**: CSS modules with theme support
-- **API Integration**: Comprehensive service layer
-- **State Management**: Context API for theme and user state
+- **Next.js Platform**: Modern Next.js application with App Router (advanced features)
+- **Docusaurus Platform**: Lightweight Docusaurus application for GitHub Pages (maximum accessibility)
+- **Dual Compatibility**: Both platforms share the same backend services and content
+- **Components**: React-based modular components for both platforms
+- **Styling**: Tailwind CSS for Next.js, Docusaurus styling for documentation platform
+- **API Integration**: Comprehensive service layer connecting to shared backend
+- **State Management**: Context API for theme and user state on both platforms
 
 ### Security Features
 - **Authentication**: JWT tokens with proper expiration
@@ -86,11 +88,12 @@ The Physical AI & Humanoid Robotics Textbook Platform has been successfully impl
 ## Deployment & Operations
 
 ### Infrastructure
-- **Containerization**: Docker and Docker Compose
+- **Containerization**: Docker and Docker Compose for backend services
 - **Database**: PostgreSQL with persistent storage
 - **Vector Store**: Qdrant for semantic search
 - **Caching**: In-memory and Redis options
 - **Load Balancing**: Configured for scalability
+- **Dual Frontend Deployment**: Next.js app for advanced features + Docusaurus for GitHub Pages accessibility
 
 ### Monitoring & Health
 - **Health Checks**: Basic and detailed endpoints

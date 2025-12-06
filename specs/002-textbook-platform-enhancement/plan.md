@@ -7,7 +7,7 @@
 
 ## Summary
 
-Implementation of a comprehensive textbook platform enhancement featuring user authentication, RAG chatbot for interactive learning, content personalization, Urdu translation, modern pedagogical approaches with fun fact cards, and theme support. The system will be built as a web application with a Docusaurus-based frontend and backend services to support authentication, personalization, translation, and RAG chatbot functionality.
+Implementation of a comprehensive textbook platform enhancement featuring user authentication, RAG chatbot for interactive learning, content personalization, Urdu translation, modern pedagogical approaches with fun fact cards, and theme support. The system will be built as a web application with a Next.js frontend using the App Router and backend services to support authentication, personalization, translation, and RAG chatbot functionality.
 
 ## Technical Context
 
@@ -18,9 +18,9 @@ Implementation of a comprehensive textbook platform enhancement featuring user a
 -->
 
 **Language/Version**: TypeScript/JavaScript for frontend, Python 3.11+ for backend services
-**Primary Dependencies**: Docusaurus, FastAPI, OpenAI SDK, better-auth, Qdrant, Neon PostgreSQL
+**Primary Dependencies**: Next.js 14+ with App Router, FastAPI, OpenAI SDK, better-auth, Qdrant, Neon PostgreSQL
 **Storage**: PostgreSQL for user data and preferences, Qdrant for RAG vector storage, file system for textbook content
-**Testing**: pytest for backend, Jest for frontend, Playwright for E2E tests
+**Testing**: pytest for backend, Jest/Vitest for frontend, Playwright for E2E tests
 **Target Platform**: Web application (Linux/Mac/Windows browsers)
 **Project Type**: web - determines source structure
 **Performance Goals**: Support 1000 concurrent users, RAG chatbot responses under 3 seconds, theme switching under 2 seconds
@@ -81,6 +81,29 @@ backend/
 
 frontend/
 ├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── login/
+│   │   │   └── page.tsx
+│   │   ├── register/
+│   │   │   └── page.tsx
+│   │   ├── chat/
+│   │   │   └── page.tsx
+│   │   ├── book/
+│   │   │   └── page.tsx
+│   │   ├── textbook-content/
+│   │   │   └── [slug]/
+│   │   │       └── page.tsx
+│   │   ├── api/
+│   │   │   ├── auth/
+│   │   │   │   ├── login/
+│   │   │   │   │   └── route.ts
+│   │   │   │   └── register/
+│   │   │   │       └── route.ts
+│   │   │   └── rag/
+│   │   │       └── route.ts
+│   │   └── globals.css
 │   ├── components/
 │   │   ├── Auth/
 │   │   ├── RAGChatbot/
@@ -88,18 +111,14 @@ frontend/
 │   │   ├── Translation/
 │   │   ├── FunFactCard/
 │   │   └── ThemeToggle/
-│   ├── pages/
 │   ├── services/
 │   └── utils/
-├── docs/
-│   ├── textbook-content/
-│   └── fun-fact-cards/
 └── tests/
     ├── unit/
     └── e2e/
 ```
 
-**Structure Decision**: Selected Option 2: Web application structure to separate frontend (Docusaurus-based textbook) from backend services (authentication, RAG, personalization, translation). This allows the frontend to be deployed to GitHub Pages while backend services run on separate infrastructure.
+**Structure Decision**: Selected Option 2: Web application structure to separate frontend (Next.js App Router-based textbook) from backend services (authentication, RAG, personalization, translation). This allows the frontend to be deployed to various hosting platforms (Vercel, Netlify, etc.) while backend services run on separate infrastructure.
 
 ## Complexity Tracking
 
