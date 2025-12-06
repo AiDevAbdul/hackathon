@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.specify/scripts/powershell/setup-plan.ps1 -Json)",
+      "Bash(python test_rag_functions.py)",
+      "Bash(python test_personalization_functionality.py)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
